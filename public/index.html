@@ -1,20 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2039223457686745"
-    crossorigin="anonymous"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" type="image/ico" href="/assets/favicon-mtvwWgEY.ico" />
-    <title>Time Hoop - The Ultimate Date Calculation Tool</title>
-    <meta name="description" content="Time Hoop is your go-to date calculator for performing complex date arithmetic. From calculating future dates to setting calendar events, Time Hoop (or timehoop) has you covered." />
-    <script type="module" crossorigin src="/assets/index-CTJK4_Qm.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-iDOyGI-3.css">
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Hoop - Time Machine</title>
+  <style>
+    /* Global reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  </body>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black; /* Black background */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Container for image and button */
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* Max width of the image container */
+      padding-top: 56.25%; /* Responsive aspect ratio for the image */
+    }
+
+    /* Background image settings */
+    .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('time-hoop.png'); /* Your image here */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Button on top of the image */
+    .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4a90e2;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none; /* Remove underline from the link */
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #357ab8;
+    }
+
+    /* Make the button and image responsive */
+    @media (max-width: 768px) {
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Time Hoop Image -->
+    <div class="image"></div>
+
+    <!-- Button that links to the calculator app -->
+    <a href="/timehoop-app" class="button">Time Machine #1</a> <!-- Link to the app page -->
+  </div>
+
+</body>
 </html>
