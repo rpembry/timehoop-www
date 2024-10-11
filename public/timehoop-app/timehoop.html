@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Hoop - Time Machine</title>
+  <style>
+    /* Global reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black; /* Black background */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Container for image and button */
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* Max width of the image container */
+      padding-top: 56.25%; /* Responsive aspect ratio for the image */
+    }
+
+    /* Background image settings */
+    .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('time-hoop.png'); /* Your image here */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Button on top of the image */
+    .button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #4a90e2;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none; /* Remove underline from the link */
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #357ab8;
+    }
+
+    /* Make the button and image responsive */
+    @media (max-width: 768px) {
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Time Hoop Image -->
+    <div class="image"></div>
+
+    <!-- Button that links to the calculator app -->
+    <a href="/timehoop-app" class="button">Time Machine #1</a> <!-- Link to the app page -->
+  </div>
+
+</body>
+</html>
